@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title> Navbar</title>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+      
+        <a href="navweb.html">Home</a></li>
+        <a href="Resources.html">Resources</a></li>
+        <a href="Contact.html">Contact</a></li>
+      
+      </nav>
+    </header>
+    <div>
+      <p>
+        Contact Page
+      </p>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+    
+</html>
+

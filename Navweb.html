@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta name="viewport" content="width=device-width" />
+    <title> Navbar</title>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+          <a href="navweb.html">Home</a>
+          <a href="Resources.html">Resources</a>
+          <a href="Contact.html">Contact</a>
+      </nav>
+    </header>
+    <div>
+      <p> Hello! </p>
+      <p>    The JavaScript code also listens for the mouseover and mouseout events on the navigation menu. 
+        When the user hovers over a menu item, it changes the background color and text color of the menu. 
+        When the user moves the mouse out of the menu item, it resets the styles to their original values.
+        The HTML structure is a simple navigation menu with an unordered list of links.
+        The CSS styles the navigation menu with a fixed position, dark background color, and white text color.
+        It also adds a transition effect to the background color and text color.
+      </p>
+
+    </div>
+    
+    <div>
+      <p>                                                                                                                                       
+      </p>
+    </div>
+  </body>
+
+  <script>
+    document.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+
+      if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+      } else{
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  </html>
